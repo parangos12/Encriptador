@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="tittle">
+        <p>Encripta tus archivos</p>
+    </div>
+
+    <div class="drag-drop">
+        <app-drag-and-drop class="drag-drop-zone"></app-drag-and-drop>
+    </div>
+
+    <div class="infor-button">
+        <p *ngIf="encriptado">Archivo encriptado. Presiona en el botón para descargar.</p>
+        <div class="button-container">
+            <button mat-raised-button color="primary" *ngIf="btnEncrypt" (click)="changeButton()">Encriptar</button>
+            <button mat-raised-button color="primary" *ngIf="btnDownload" (click)="downloadEncryptedFile()" >Descargar</button>
+        </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr 0.4fr 1.7fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0% 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        ". imgEncrypt imgEncrypt ."
+        ". imgEncrypt imgEncrypt ."
+        ". tittle tittle ."
+        ". infor infor ."
+        ". . . ."
+        ". . . .";
+    width: 100%;
+    height: 100%;
+}
+
+.infor {
+    justify-self: center;
+    align-self: start;
+    grid-area: infor;
+    width: 71%;
+    font-size: 160%;
+}
+
+.imgEncrypt {
+    justify-self: center;
+    align-self: end;
+    grid-area: imgEncrypt;
+    width: 90%;
+    height: 100%;
+}
+
+.tittle {
+    font-size: xx-large;
+    font-weight: bold;
+    align-self: start;
+    grid-area: tittle;
+}

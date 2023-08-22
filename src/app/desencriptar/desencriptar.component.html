@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="tittle">
+        <p>Desencripta tus archivos</p>
+    </div>
+
+    <div class="drag-drop">
+        <app-drag-and-drop-descrypt class="drag-drop-zone"></app-drag-and-drop-descrypt>
+    </div>
+
+    <div class="infor-button">
+        <p *ngIf="desencriptado">Archivo encriptado. Presiona en el botón para descargar.</p>
+        <div class="button-container">
+            <button mat-raised-button color="primary" *ngIf="btnDecrypt" (click)="changeButton()">Desencriptar</button>
+            <button mat-raised-button color="primary" *ngIf="btnDownload"
+                (click)="downloadDecryptedFile()">Descargar</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,5 @@
+<div id="drag-drop-zone" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)"
+    [class.dragover]="isDragOver">
+    {{ isDragOver ? 'Suelta aquí' : 'Arrastra y suelta archivos .txt a encriptar' }}
+</div>
+<p *ngIf="fileLoaded">Archivo cargado</p>
